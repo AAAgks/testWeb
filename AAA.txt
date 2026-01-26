@@ -1,1 +1,4 @@
-https://forum.ywhack.com/bountytips.php?download
+<!DOCTYPE html>
+<script>alert("Hello World!!!");</script>
+</html>
+
