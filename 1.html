@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带图片的HTML页面</title>
+    <style>
+        /* 简单的页面样式，让布局更美观 */
+        body {
+            font-family: "微软雅黑", sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .image-container {
+            margin: 30px 0;
+        }
+        /* 控制图片大小，适配不同屏幕 */
+        img {
+            max-width: 100%;
+            height: auto; /* 保持图片宽高比 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 轻微阴影 */
+        }
+        h1 {
+            color: #333;
+        }
+        .desc {
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>我的第一个标题</h1>
-    <p>我的第一个段落。</p>
+    <h1>我的图片展示页面</h1>
+
+    <!-- 本地图片示例（需将图片放在同一目录下） -->
+    <div class="image-container">
+        <h3>1. 本地图片</h3>
+        <!-- src：图片路径；alt：图片无法加载时显示的替代文本；title：鼠标悬停时显示的提示 -->
+        <img src="example.jpg" alt="示例图片" title="这是一张本地示例图片" width="800">
+        <p class="desc">这是一张保存在本地的图片，需确保example.jpg和当前HTML文件在同一文件夹</p>
+    </div>
+
+    <!-- 网络图片示例（直接使用在线图片链接） -->
+    <div class="image-container">
+        <h3>2. 网络图片</h3>
+        <!-- 使用在线图片URL，无需本地文件 -->
+        <img src="https://picsum.photos/800/500" alt="随机风景图片" title="这是一张在线随机图片">
+        <p class="desc">这是一张在线图片，使用picsum.photos提供的随机图片链接</p>
+    </div>
+
 </body>
 </html>
